@@ -20,32 +20,32 @@ Summary statistics had been obtained :
 
 ### own qq plot
 
-####Installation
+#### Installation
 see pre requirement section
 
 #### example run 
 * see `qq_manuals.r` 
 
-###qqman library
+### qqman library
 qqman is a R-library to plot Manhattan plot and  QQ-plot
-####Installation
+#### Installation
 ```
 #install.package
 install.packages('qqman')
 ```
-####example run
+#### example run
 * `man_qqman.r` : script example to do QQ-plot
 
-###Fastman
+### Fastman
 * fastman is a R-library to do a QQ plot
 
-####Installation
+#### Installation
 
 ```
 devtools::install_github('kaustubhad/fastman')
 ```
 
-####example run
+#### example run
 * `man_qqman.r` : script example to plot a qq plot
 
 
@@ -59,4 +59,7 @@ see pre requirement section
 #### example run 
 * see `qq_lambda.r` 
 
+
+## Using locuszoom web interface
+ * see (example in locuszoomV2)[https://my.locuszoom.org/gwas/91333/ ]
 

@@ -1,0 +1,28 @@
+PLINK v1.90b6.25 64-bit (5 Mar 2022)
+Options in effect:
+  --bfile data/chr7_77727734_79727734
+  --ld-snp 17:78727734:T:C
+  --ld-window 99999
+  --ld-window-kb 10000
+  --ld-window-r2 0
+  --out data/chr7_77727734_79727734
+  --r2
+
+Hostname: n02
+Working directory: /home/jeantristan/Travail/git/course_posgwas_prep_2022/regional_plot
+Start time: Thu Jan 12 14:35:12 2023
+
+Random number seed: 1673526912
+128315 MB RAM detected; reserving 64157 MB for main workspace.
+75334 variants loaded from .bim file.
+500 people (0 males, 0 females, 500 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to data/chr7_77727734_79727734.nosex .
+Using up to 39 threads (change this with --threads).
+Before main variant filters, 500 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is exactly 1.
+75334 variants and 500 people pass filters and QC.
+Note: No phenotypes present.
+--r2 to data/chr7_77727734_79727734.ld ... done.
+
+End time: Thu Jan 12 14:35:13 2023

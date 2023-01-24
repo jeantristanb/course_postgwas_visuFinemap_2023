@@ -17,37 +17,40 @@ Summary statistics had been obtained :
  * devtools
  * data.table
 
-###qqman library
+### qqman library
 qqman is a R-library to plot Manhattan plot and  QQ-plot
-####Installation
+#### Installation
 ```
 #install.package
 install.packages('qqman')
 ```
-####example run
+#### example run
 * `man_qqman.r` : script example to plot Manhattan
 
-###Fastman
+### Fastman
 * fastman is a R-library to do Manhattan plot with more option than `qqman` as lead SNPs
 
-####Installation
+#### Installation
 
 ```
 devtools::install_github('kaustubhad/fastman')
 ```
 
-####example run
+#### example run
 * `man_qqman.r` : script example to plot Manhattan
 
 ### Hudson library
 Hudson is a R-library to plot Manhattan plot and also two manhantan plot in mirror
 
-####Installation
+#### Installation
 ```
 #install.package
 devtools::install_github('anastasia-lucas/hudson')
 install.packages('ggrepel')
 ```
-####example run
+#### example run
 * `man_hudson.r` : script example to plot Manhattan using hudson library
+
+## Using locuszoom web interface
+ * see (example in locuszoomV2)[https://my.locuszoom.org/gwas/91333/ ]
 

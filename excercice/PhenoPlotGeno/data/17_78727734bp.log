@@ -1,0 +1,27 @@
+PLINK v1.90b6.25 64-bit (5 Mar 2022)
+Options in effect:
+  --bfile data/chr7_77727734_79727734
+  --extract range data/17_78727734.bed
+  --out data/17_78727734bp
+  --recode tab
+
+Hostname: n02
+Working directory: /home/jeantristan/Travail/git/course_posgwas_prep_2022/phenotypedis_genotyp
+Start time: Thu Jan 12 15:39:46 2023
+
+Random number seed: 1673530786
+128315 MB RAM detected; reserving 64157 MB for main workspace.
+75334 variants loaded from .bim file.
+500 people (0 males, 0 females, 500 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to data/17_78727734bp.nosex .
+--extract range: 75333 variants excluded.
+--extract range: 1 variant remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 500 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is exactly 1.
+1 variant and 500 people pass filters and QC.
+Note: No phenotypes present.
+--recode ped to data/17_78727734bp.ped + data/17_78727734bp.map ... done.
+
+End time: Thu Jan 12 15:39:46 2023

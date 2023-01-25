@@ -25,11 +25,8 @@ RUN R -e "install.packages(\"ggplot2\", repos='cran.r-project.org/')"
 RUN R -e "install.packages(\"gridExtra\", repos='cran.r-project.org/')"
 RUN R -e "devtools::install_github('kaustubhad/fastman')"
 RUN R -e "devtools::install_github('anastasia-lucas/hudson')"
-RUN R -e "install.packages(\"https://cran.r-project.org/src/contrib/Archive/forestplot/forestplot_2.0.1.tar.gz\", repos='cran.r-project.org/')"
+# dependency for forestplot
+RUN R -e "install.packages(\"checkmate\", repos='cran.r-project.org/')"
+RUN R -e "install.packages(\"https://cran.r-project.org/src/contrib/Archive/forestplot/forestplot_2.0.1.tar.gz\")"
 
 
-#RUN pip3 install numpy scipy pandas matplotlib openpyxl biopython Distance 
-#RUN R -e "install.packages(c('openxlsx', 'kableExtra','plyr', 'knitr'), repos='https://cloud.r-project.org')"
-
-
-#crlmm => bioconductor

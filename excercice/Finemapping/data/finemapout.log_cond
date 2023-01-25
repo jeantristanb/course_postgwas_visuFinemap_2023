@@ -1,0 +1,43 @@
+
+|--------------------------------------|
+| Welcome to FINEMAP v1.4.1            |
+|                                      |
+| (c) 2015-2022 University of Helsinki |
+|                                      |
+| Help :                               |
+| - ./finemap --help                   |
+| - www.finemap.me                     |
+| - www.christianbenner.com            |
+|                                      |
+| Contact:                             |
+| - finemap@christianbenner.com        |
+| - matti.pirinen@helsinki.fi          |
+|--------------------------------------|
+
+--------
+SETTINGS
+--------
+- dataset       : all
+- cond-pvalue   : 5e-08
+- corr-config   : 0.95
+- n-causal-snps : 5
+- prior-std     : 0.05 
+
+------------
+CONDITIONING (1/1)
+------------
+- GWAS summary stats               : data/sumstat.z
+- SNP correlations                 : data/ld_chr7_finemap.ld
+- Conditional SNP z-scores         : data/finemapout.snp
+- Causal configurations            : data/finemapout.config
+- Credible sets                    : data/finemapout.cred
+- Log file                         : data/finemapout.log_cond
+
+- Updated prior SD of effect sizes : 0.05 0.171 0.584 1.99 
+
+- Number of GWAS samples           : 500
+- Number of SNPs                   : 696
+
+- 2 configurations evaluated (2/5) : converged after 1 causal SNPs
+- Run time                         : 0 hours, 0 minutes, 2 seconds
+

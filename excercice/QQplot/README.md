@@ -53,7 +53,7 @@ devtools::install_github('kaustubhad/fastman')
 
 Computed your own inflation factors
 
-####Installation
+#### Installation
 see pre requirement section
 
 #### example run 

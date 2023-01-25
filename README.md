@@ -9,5 +9,23 @@ Repository contains excercice and data of course post gwas organised by h3abione
   * MetaAnalyse
   * PhenoPlotGeno  
   * QQplot  
-  * Regional_plot
+  * Regional\_plot
+
+## Requirement :
+ * shell, bash : grep, awk
+ * R (3.6)
+ * R library :
+  * data.table
+  * devtools
+  * qqman
+  * optparse
+  * fastman
+  * ggplot2 
+  * ggpubr
+  * hudson 
+  * forestplot
+  * gridExtra
+ * locuszoom stand alone
+ * finemap software
+ 
 

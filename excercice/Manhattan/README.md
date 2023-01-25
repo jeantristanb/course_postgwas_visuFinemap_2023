@@ -6,7 +6,7 @@ Summary statistics had been obtained :
 * 50,000 positions 
 * phenotypes has been simulated from result of diabetes extracted from gwas catalog
 * gwas had been done using h3agwas pipeline and gemma software
-* see (h3agwas-example)[https://github.com/h3abionet/h3agwas-examples] 
+* see [h3agwas-example](https://github.com/h3abionet/h3agwas-examples) 
 
 
 ## Scripts description 
@@ -52,5 +52,5 @@ install.packages('ggrepel')
 * `man_hudson.r` : script example to plot Manhattan using hudson library
 
 ## Using locuszoom web interface
- * see (example in locuszoomV2)[https://my.locuszoom.org/gwas/91333/ ]
+ * see [example in locuszoomV2](https://my.locuszoom.org/gwas/91333/)
 

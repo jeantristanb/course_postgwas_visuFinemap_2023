@@ -11,7 +11,7 @@ Genotype data and summary statistics has been obtained from
 ## Scripts description 
 
 ### Pre requirement
-* (locus zoom Standalone)[https://genome.sph.umich.edu/wiki/LocusZoom_Standalone]
+* [locus zoom Standalone](https://genome.sph.umich.edu/wiki/LocusZoom_Standalone)
  * R (tested on 3.6, unix tested)
  * python2.7
  * plink

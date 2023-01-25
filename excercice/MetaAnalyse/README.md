@@ -13,7 +13,7 @@ Summary statistics had been obtained :
 * 50,000 positions 
 * phenotypes has been simulated from result of diabetes extracted from gwas catalog
 * gwas had been done using h3agwas pipeline and gemma software
-* see (h3agwas-example)[https://github.com/h3abionet/h3agwas-examples] 
+* see [h3agwas-example](https://github.com/h3abionet/h3agwas-examples) 
 
 ## Scripts description 
 

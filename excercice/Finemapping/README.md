@@ -11,7 +11,7 @@ Genotype data and summary statistics has been obtained from
 ## Scripts description 
 
 ### Pre requirement
-* (locus zoom Standalone)[https://genome.sph.umich.edu/wiki/LocusZoom_Standalone]
+* [locus zoom Standalone](https://genome.sph.umich.edu/wiki/LocusZoom_Standalone)
  * R (tested on 3.6, unix tested)
  * python2.7
  * plink
@@ -29,7 +29,7 @@ chmod +x ./bin/finemap
 
 ### example description
 
-we will run (FINEMAP)[http://www.christianbenner.com/] software, with previous dataset used in regional plot, we will prepared data, extract lead SNPs and credible set at 95 %. we will select position around chromosome 17 positions 78727734 using a windows of 100kb
+we will run [FINEMAP](http://www.christianbenner.com/) software, with previous dataset used in regional plot, we will prepared data, extract lead SNPs and credible set at 95 %. we will select position around chromosome 17 positions 78727734 using a windows of 100kb
 
 ### Prepare your data
 as input, FINEMAP :

@@ -13,7 +13,7 @@ Objectif is to run your phenotype in function of you genotype
 plot example using positions 78727734 on chromosome 17
 
 ### Pre requirement
-* (locus zoom Standalone)[https://genome.sph.umich.edu/wiki/LocusZoom_Standalone]
+* [locus zoom Standalone](https://genome.sph.umich.edu/wiki/LocusZoom_Standalone)
  * R (tested on 3.6, unix )
  * plink
  * sh or bash
@@ -40,7 +40,7 @@ install.package"ggpubr", "optparse", "gridExtra"
 ```
 
 #### run 
- * see `an_plotboxplot.r` R-script from (h3agwas/utils/annotation)[https://github.com/h3abionet/h3agwas/tree/master/utils/annotation]
+ * see `an_plotboxplot.r` R-script from [h3agwas/utils/annotation](https://github.com/h3abionet/h3agwas/tree/master/utils/annotation)
  * example of run in `extract_genoanboxplot.bash`
 
 

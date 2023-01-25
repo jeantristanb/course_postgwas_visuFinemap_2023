@@ -1,4 +1,4 @@
-# Post GWAS course h3abionet 2023 : visualisation 
+# Post GWAS course h3abionet 2023 : visualisation  and Fine Mapping
 Repository contains excercice and data of course post gwas organised by h3abionet in 2023
 
 ## decriptif folder :

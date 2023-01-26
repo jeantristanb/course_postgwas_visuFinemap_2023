@@ -13,8 +13,8 @@ stat_box_data <- function(x) {
     )
   )
 }
-ListPackNeed=c("ggpubr", "optparse", "gridExtra")
-ListPackNeedIn<-ListPackNeed[!ListPackNeed %in% rownames(installed.packages())]
+#ListPackNeed=c("ggpubr", "optparse", "gridExtra")
+#ListPackNeedIn<-ListPackNeed[!ListPackNeed %in% rownames(installed.packages())]
 #for(pack in ListPackNeedIn)if(pack %in% rownames(installed.packages()) == FALSE) {install.packages(pack, lib= Sys.getenv("R_LIBS_USER"), repos='http://cran.us.r-project.org')}
 library("ggpubr")
 library("optparse")
@@ -58,28 +58,40 @@ return(datamergres)
 
 option_list = list(
   make_option(c("-d", "--data"), type="character",
-              help="data files with phenotype and FID", metavar="character"),
+              help="data files with phenotype and IID, FID", metavar="character"),
   make_option(c("-p", "--ped"), type="character", 
-              help="ped file contains genotype for each ", metavar="character"),
+              help="ped file contains genotype for each individual", metavar="character"),
   make_option(c("-e", "--pheno"), type="character", 
-              help="ped file contains genotype for each ", metavar="character"),
+              help="phenotype in data", metavar="character"),
   make_option(c("-c", "--cov"), type="character", 
-              help="ped file contains genotype for each ", metavar="character"),
+              help="optional : covariable must be present in data", metavar="character"),
   make_option(c("-t", "--type_out"), type="character", default="pdf",
               help="type output file name [default= %default]", metavar="character"),
   make_option(c("-g", "--gxe"), type="character",
-              help="type output file name [default= %default]", metavar="character"),
+              help="optional: Variable to plot a gxe", metavar="character"),
   make_option(c("-o", "--out"), type="character", default="out",
-              help="output file name [default= %default]", metavar="character")
+              help="output basename [default= %default]", metavar="character")
 );
 
 args = commandArgs(trailingOnly=TRUE)
-if(length(args)<2){
-opt=list(ped="test/plk_rs190712692.ped",data="test/All.pheno",out="test_rs1.pdf", pheno="cholesterol_1_qc", cov="sex,age")
-}else{
+#if(length(args)<2){
+#opt=list(ped="test/plk_rs190712692.ped",data="test/All.pheno",out="test_rs1.pdf", pheno="cholesterol_1_qc", cov="sex,age")
 opt = OptionParser(option_list=option_list);
 opt = parse_args(opt);
+
+
+if(is.null(opt$data)){
+  stop("data parameter must be provided. See script usage (--help)")
 }
+if(is.null(opt$ped)){
+  stop("ped parameter must be provided. See script usage (--help)")
+}
+
+if(is.null(opt$pheno)){
+  stop("pheno parameter must be provided. See script usage (--help)")
+}
+
+
 data_ped=read.table(opt[["ped"]], sep="\t")
 data_pheno=read.table(opt[["data"]], header=T)
 data_ped<-data_ped[, c(1,2,ncol(data_ped))]
@@ -117,6 +129,3 @@ gg<-arrangeGrob(p, p2, ncol=2)
 }
 }
 ggsave(opt[['out']],gg,width=7, height=7)
-
-
-

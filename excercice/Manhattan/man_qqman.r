@@ -1,7 +1,7 @@
 # import library
 library(qqman)
 library(data.table) ## allow to read big file using fread function
-data_sumstat<-fread('assoc/asso_phenoqt2.gemma') # reading summary statistics
+data_sumstat<-fread('data/asso_phenoqt2.gemma') # reading summary statistics
 #dentify colums contains p-value
 head(data_sumstat, 2)
 # dimension of data

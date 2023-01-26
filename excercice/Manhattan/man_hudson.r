@@ -3,8 +3,8 @@ library(data.table) ## allow to read big file using fread function
 #devtools::install_github('anastasia-lucas/hudson')
 #install.packages('ggrepel')
 library(hudson)
-data_sumstat_1<-fread('assoc/asso_phenoqt1.gemma') # reading summary statistics
-data_sumstat_2<-fread('assoc/asso_phenoqt2.gemma') # reading summary statistics
+data_sumstat_1<-fread('data/asso_phenoqt1.gemma') # reading summary statistics
+data_sumstat_2<-fread('data/asso_phenoqt2.gemma') # reading summary statistics
 # data frame, must contain SNP, CHR, POS, pvalue, optional Shape
 # select of column of interrest and change name, order is important.
 data_sumstat_1<-data_sumstat_1[,c('rs', "chr",'ps', 'p_wald')];names(data_sumstat_1)<-c("SNP","CHR`","POS", "pvalue")

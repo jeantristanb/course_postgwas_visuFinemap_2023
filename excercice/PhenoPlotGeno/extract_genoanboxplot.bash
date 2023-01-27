@@ -1,6 +1,6 @@
 module load plink/v1.90b6.25 
 
-plinkbase=data/chr7_77727734_79727734
+plinkbase=data/chr17_77727734_79727734
 filers=data/17_78727734.bed
 echo "17	78727734	78727734	17:78727734" > $filers
 # format in ped file 

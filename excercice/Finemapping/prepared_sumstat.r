@@ -2,7 +2,7 @@ library(data.table)
 # load summary statistics
 datasumstat<-fread('data/data_regplot.gemma')
 # load info plink file for position, information 1 and 4 contains chr bp
-databim<-fread('data/chr7_77727734_79727734.bim', header=F)
+databim<-fread('data/chr17_77727734_79727734.bim', header=F)
 ## we keep only positions in 
 datasumstatclean<-merge(datasumstat, databim[,c(1,4)],by.x=c('chr','ps'),by.y=c("V1","V4"), all=F)
 ## 

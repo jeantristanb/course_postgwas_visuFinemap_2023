@@ -28,5 +28,6 @@ RUN R -e "devtools::install_github('anastasia-lucas/hudson')"
 # dependency for forestplot
 RUN R -e "install.packages(\"checkmate\", repos='cran.r-project.org/')"
 RUN R -e "install.packages(\"https://cran.r-project.org/src/contrib/Archive/forestplot/forestplot_2.0.1.tar.gz\")"
-
+RUN wget http://www.christianbenner.com/finemap_v1.4_x86_64.tgz && tar -xzf finemap_v1.4_x86_64.tgz
+RUN mv /finemap_v1.4_x86_64/finemap_v1.4_x86_64 /usr/bin/finemap && chmod +x /usr/bin/finemap
 

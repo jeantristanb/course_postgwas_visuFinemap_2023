@@ -1,6 +1,6 @@
 # import library
 library(data.table) ## allow to read big file using fread function
-data_sumstat<-fread('assoc/result.plink') # reading summary statistics
+data_sumstat<-fread('data/result.plink') # reading summary statistics
 # identify colums contains p-value
 head(data_sumstat, 2)
 # dimension of data

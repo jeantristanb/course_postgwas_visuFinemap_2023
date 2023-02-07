@@ -1,5 +1,5 @@
 # Regional plot 
-##Description data
+## Description data
 
 Genotype data and summary statistics has been obtained from
 * 500 individuals from 1000 genome projects in plink format.

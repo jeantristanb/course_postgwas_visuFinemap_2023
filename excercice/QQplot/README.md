@@ -1,7 +1,7 @@
 # QQ-plots 
 
 ## description data
-one dataset in `assoc` folder contains subsample of summary statistics. 
+one dataset in `data` folder contains subsample of summary statistics. 
 Summary statistics had been obtained :
 * 500 individuals from 1000 genome projects
 * 50,000 positions 

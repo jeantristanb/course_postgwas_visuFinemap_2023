@@ -10,6 +10,9 @@ Repository contains excercice and data of course post gwas organised by h3abione
   * PhenoPlotGeno  
   * QQplot  
   * Regional\_plot
+* install : scripts contains to install requirement for excercice
+* docker : docker image to test course excercice
+* document\_course : course and excercice.
 
 ## Requirement software :
 * shell, bash : grep, awk

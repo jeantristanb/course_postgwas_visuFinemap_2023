@@ -40,12 +40,12 @@ as input, FINEMAP :
 
 
 ### Format sumarry statistics 
-we used a r-script to open summary statistics, select positions around SNPs of interrest and positions present than genetic file, computed maf and format header using FINEMAP manual, furthermore we will create a bed file (-interval-) to 
+we used a r-script to open summary statistics, select positions around SNPs of interrest and positions present than genetic file format header using FINEMAP manual, furthermore we will create a bed file (-interval-) to 
 * script `prepared_sumstat.r`
 
 ## build LD matrix
 LD matrix in input as specific characteristics, must be square, and separated by space not tab.
-
+ * file `data/sumstat.bed` created by R script `prepared_sumstat.r`
 
 ```
 plink --r2 square0 yes-really -bfile data/chr17_77727734_79727734 -out "data/tmp" --extract range data/sumstat.bed

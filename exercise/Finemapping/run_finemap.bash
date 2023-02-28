@@ -1,4 +1,3 @@
-module load plink/v1.90b6.25
 # computed LD
 ## file range created by R-script
 plink --r2 square0 yes-really -bfile data/chr17_77727734_79727734 -out "data/tmp" --extract range data/sumstat.bed

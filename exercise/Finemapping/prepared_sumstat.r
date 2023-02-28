@@ -16,4 +16,4 @@ names(datasumstatclean2)<-c('rsid', 'chromosome', 'position', 'allele1', 'allele
 # write new summary statistics
 write.table(datasumstatclean2, quote=F, row.names=F, col.names=T, file='data/sumstat.z',sep=' ')
 ## build a bed file for plink and build LD
-write.table(datasumstatclean2[,c('chromosome', 'position', 'position','rsid')], quote=F, row.names=F, col.names=T, file='data/sumstat.bed',sep='\t')
+write.table(datasumstatclean2[,c('chromosome', 'position', 'position','rsid')], quote=F, row.names=F, col.names=F, file='data/sumstat.bed',sep='\t')
